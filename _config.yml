@@ -9,6 +9,12 @@ last_name: Hoang
 contact_note: >
   Contact me via my email: vthanghoang.working@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
+  I am a fourth-year electronics and communications engineering student at UD-DUT, with a CPA 3.39/4.0,
+  I have spent my past few years at UD-DUT conducting research on LoRa, IoT systems and Smart Healthcare.,
+  My objective is to integrate these technologies with Artificial Intelligence to develop Digital Health solutions and other specialized AIoT applications,
+  I am currently focusing on broadening my domain deeply, especially in Electronics Engineering, before moving toward my future plan,  
+  My future plan is to pursue a Master’s degree in the Europe or Australia to deepen my technical expertise,
+  Ultimately, I aim to work in an academic research environment where I can continue to invent and prototype high-performance AIoT systems for the healthcare industry.
 footer_text: >
 keywords: EdgeAI, IoTs, Embedded Systems, Smart Healthcare # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -260,8 +266,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Hoang]
+  first_name: [Thang, T. V.]
 
   style: apa
   locale: en
