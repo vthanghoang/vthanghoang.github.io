@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Aesthetic Academic Modern Theme - Custom Overlay
+   ========================================================================== */
+
+/* 1. Đổi Typography sang font hiện đại & sắc nét */
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  letter-spacing: -0.01em;
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* 2. Thanh Navbar mờ kính cường lực (Glassmorphism) */
+.navbar {
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html[data-theme='dark'] .navbar {
+  background-color: rgba(18, 18, 18, 0.75) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* 3. Nâng cấp Avatar / Profile Picture */
+.profile img {
+  border-radius: 20px !important;
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.15) !important;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+}
+
+.profile img:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.22) !important;
+}
+
+/* 4. Thẻ Dự án & Bài viết (Aesthetic Cards) */
+.card {
+  border-radius: 16px !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  background: var(--global-card-bg-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.1) !important;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+html[data-theme='dark'] .card {
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme='dark'] .card:hover {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Bo góc ảnh trong Project Card */
+.card img {
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+/* 5. Khối News & Highlight Badges */
+.news-table {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.badge {
+  border-radius: 8px !important;
+  padding: 6px 12px !important;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
