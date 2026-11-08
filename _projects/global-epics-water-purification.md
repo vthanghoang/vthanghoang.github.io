@@ -168,3 +168,6 @@ _[Watch the water-quality demonstration on Google Drive](https://drive.google.co
 ### Outcome
 
 The project combined stakeholder research, systematic concept selection, detailed modelling, prototyping, and teamwork. Our WATER-ICE team received the **First Prize Award** in the EPICS Innovation Showcase, competing alongside Arizona State University and universities from across Vietnam.
+
+<img width="850" height="828" alt="image" src="https://github.com/user-attachments/assets/37d863c9-d1c7-4036-bd33-5c9cb5987828" />
+
