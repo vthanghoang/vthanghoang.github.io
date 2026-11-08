@@ -53,7 +53,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-edge-ai-coffee-bean-sorting",
           title: 'Edge AI Coffee Bean Sorting',
-          description: "Quantized MobileNetV2-SSD inference on a Raspberry Pi 4B.",
+          description: "A Raspberry Pi computer-vision system for detecting coffee bean quality and defects at the edge.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/coffee-bean-edge-ai/";
             },},{id: "projects-lorawan-flood-water-monitoring",
