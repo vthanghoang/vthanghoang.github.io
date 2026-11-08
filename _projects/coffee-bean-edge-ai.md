@@ -199,7 +199,7 @@ _Figure 27. Prototype test box with dark, light, green, and insect-damaged beans
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/team-prototyping.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="DATA team members working on the coffee-bean sorting prototype" %}
 
-{% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/image.png" class="img-fluid rounded z-depth-1" zoomable=true}
+{% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/image.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Coffee-bean sorting prototype detail" %}
 
 Teamwork during hardware integration and prototype testing.
 
