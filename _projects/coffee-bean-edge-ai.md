@@ -94,13 +94,15 @@ The report records **96.9% accuracy** in its requirements and PERT summary. The 
 
 _Figure 7. Validation results shown in the team report, including a 94.8% F1 score._
 
-## 6.1 Mathematical Evaluation
+## 6.1 Model Evaluation and Training Objective
 
-The report also documents the mathematical basis used to evaluate the classifier. Mean squared error (MSE) measures the average squared gap between the target and prediction; likelihood and log-loss describe how confidently the model assigns probability to the correct class.
+For this four-class, single-label image-classification problem, the main evaluation evidence is accuracy, per-class precision, recall, F1-score, and the confusion matrix. The report states **96.9% accuracy** in its requirements/PERT summary and shows **94.8% validation F1** in the model results. These values should be read as separate reported metrics, not as interchangeable claims.
+
+The formulas below explain the training objective and how the reported metrics are interpreted. They are included as mathematical background; they are not additional experiments conducted by the team.
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/loss-mse.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Mean squared error loss function" %}
 
-_Figure 9. Mean squared error as a reference loss function._
+_Figure 9. Mean squared error shown only as a general reference; it is not the primary loss for this classifier._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/loss-likelihood.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Likelihood loss function" %}
 
@@ -112,13 +114,13 @@ _Figure 11. Log-loss formulation, which penalises confident wrong predictions._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/precision-recall-curves.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Precision recall curves for coffee bean classes" %}
 
-_Figure 12. Precision–recall curves used to compare class-level performance._
+_Figure 12. Precision–recall curves, meaningful when computed one-vs-rest for each bean class._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/map-formula.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Mean average precision formula" %}
 
-_Figure 13. Mean average precision (mAP) formulation for summarising precision–recall performance._
+_Figure 13. Mean average precision (mAP) as supplementary background; it is not reported as the primary score here because this project is not an object-detection task._
 
-Precision is the fraction of predicted positives that are correct, while recall is the fraction of actual positives that are found. The report uses these measures alongside F1 and accuracy to avoid relying on a single metric.
+Precision is the fraction of predicted positives that are correct, while recall is the fraction of actual positives that are found. For this project, macro-F1, per-class F1, and the confusion matrix are more informative than a single aggregate score because the insect-damaged and light-bean classes are harder to distinguish.
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/precision-formula.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Precision formula" %}
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/recall-formula.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Recall formula" %}
