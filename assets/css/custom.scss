@@ -4,12 +4,17 @@
 
 /* 1. Đổi Typography sang font hiện đại & sắc nét */
 body {
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-family:
+    "Plus Jakarta Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif !important;
   letter-spacing: -0.01em;
 }
 
-code, pre {
-  font-family: 'JetBrains Mono', monospace !important;
+code,
+pre {
+  font-family: "JetBrains Mono", monospace !important;
 }
 
 /* 2. Thanh Navbar mờ kính cường lực (Glassmorphism) */
@@ -21,7 +26,7 @@ code, pre {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-html[data-theme='dark'] .navbar {
+html[data-theme="dark"] .navbar {
   background-color: rgba(18, 18, 18, 0.75) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -30,7 +35,9 @@ html[data-theme='dark'] .navbar {
 .profile img {
   border-radius: 20px !important;
   box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.15) !important;
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+  transition:
+    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.4s ease;
 }
 
 .profile img:hover {
@@ -54,12 +61,12 @@ html[data-theme='dark'] .navbar {
   border-color: rgba(0, 0, 0, 0.12) !important;
 }
 
-html[data-theme='dark'] .card {
+html[data-theme="dark"] .card {
   border: 1px solid rgba(255, 255, 255, 0.06) !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-html[data-theme='dark'] .card:hover {
+html[data-theme="dark"] .card:hover {
   border-color: rgba(255, 255, 255, 0.15) !important;
   box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.4) !important;
 }
