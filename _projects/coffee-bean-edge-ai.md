@@ -98,32 +98,13 @@ _Figure 7. Validation results shown in the team report, including a 94.8% F1 sco
 
 For this four-class, single-label image-classification problem, the main evaluation evidence is accuracy, per-class precision, recall, F1-score, and the confusion matrix. The report states **96.9% accuracy** in its requirements/PERT summary and shows **94.8% validation F1** in the model results. These values should be read as separate reported metrics, not as interchangeable claims.
 
-The formulas below explain the training objective and how the reported metrics are interpreted. They are included as mathematical background; they are not additional experiments conducted by the team.
-
-{% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/loss-mse.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Mean squared error loss function" %}
-
-_Figure 9. Mean squared error shown only as a general reference; it is not the primary loss for this classifier._
-
-{% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/loss-likelihood.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Likelihood loss function" %}
-
-_Figure 10. Likelihood formulation for probabilistic classification._
-
-{% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/loss-log.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Log loss function" %}
-
-_Figure 11. Log-loss formulation, which penalises confident wrong predictions._
+The model was trained with a classification loss, while the portfolio focuses on the metrics that directly communicate model quality to a reader.
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/precision-recall-curves.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Precision recall curves for coffee bean classes" %}
 
-_Figure 12. Precision–recall curves, meaningful when computed one-vs-rest for each bean class._
-
-{% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/map-formula.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Mean average precision formula" %}
-
-_Figure 13. Mean average precision (mAP) as supplementary background; it is not reported as the primary score here because this project is not an object-detection task._
+_Figure 9. Precision–recall curves, interpreted one-vs-rest for each bean class._
 
 Precision is the fraction of predicted positives that are correct, while recall is the fraction of actual positives that are found. For this project, macro-F1, per-class F1, and the confusion matrix are more informative than a single aggregate score because the insect-damaged and light-bean classes are harder to distinguish.
-
-{% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/precision-formula.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Precision formula" %}
-{% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/recall-formula.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Recall formula" %}
 
 ## 7. Data Engineering Pipeline
 
@@ -131,45 +112,45 @@ The data-engineering workflow starts with collecting images from the team and re
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/data-cleaning-fault.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Faulty dataset images removed during cleaning" %}
 
-_Figure 14. Faulty samples identified during data cleaning._
+_Figure 10. Faulty samples identified during data cleaning._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/data-cleaning-clean.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Clean coffee bean samples retained for training" %}
 
-_Figure 15. Clean samples retained after the quality audit._
+_Figure 11. Clean samples retained after the quality audit._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/labels-black.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Black coffee bean class labels" %}
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/labels-light.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Light coffee bean class labels" %}
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/labels-green.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Green coffee bean class labels" %}
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/labels-insect-damaged.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Insect damaged coffee bean class labels" %}
 
-_Figure 16. Label examples for black, light, green, and insect-damaged beans._
+_Figure 12. Label examples for black, light, green, and insect-damaged beans._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/resize-96x96.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Image resized to 96 by 96 pixels" %}
 
-_Figure 17. Resizing every input to the MobileNetV2 input resolution._
+_Figure 13. Resizing every input to the MobileNetV2 input resolution._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/data-augmentation.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Augmentation operations applied to training data" %}
 
-_Figure 18. Rotation, flip, zoom, brightness, contrast, and noise augmentation._
+_Figure 14. Rotation, flip, zoom, brightness, contrast, and noise augmentation._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/dataset-black-self.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Black coffee beans photographed by the team" %}
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/dataset-black-reused.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Reused black coffee bean images" %}
 
-_Figure 19. Black-bean samples from team collection and reused sources._
+_Figure 15. Black-bean samples from team collection and reused sources._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/dataset-light-reused.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Light coffee bean samples" %}
 
-_Figure 20. Light-bean samples used to broaden appearance variation._
+_Figure 16. Light-bean samples used to broaden appearance variation._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/dataset-green-self.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Green coffee beans photographed by the team" %}
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/dataset-green-reused.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Reused green coffee bean images" %}
 
-_Figure 21. Green-bean samples from both collection sources._
+_Figure 17. Green-bean samples from both collection sources._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/dataset-insect-self.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Insect damaged coffee beans photographed by the team" %}
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/dataset-insect-reused.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Reused insect damaged coffee bean images" %}
 
-_Figure 22. Insect-damaged samples, the most difficult class in validation._
+_Figure 18. Insect-damaged samples, the most difficult class in validation._
 
 ## 8. Feature Extraction and Model Evaluation
 
@@ -177,19 +158,19 @@ After preprocessing, MobileNetV2 extracts increasingly compact feature maps befo
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/augmented-sample.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Augmented coffee bean training sample" %}
 
-_Figure 23. Example of an augmented training sample._
+_Figure 19. Example of an augmented training sample._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/feature-map-48.png" class="img-fluid rounded z-depth-1" zoomable=true alt="48 by 48 intermediate feature map" %}
 
-_Figure 24. Early 48 × 48 feature map._
+_Figure 20. Early 48 × 48 feature map._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/feature-map-12.png" class="img-fluid rounded z-depth-1" zoomable=true alt="12 by 12 intermediate feature map" %}
 
-_Figure 25. Mid-level 12 × 12 feature map._
+_Figure 21. Mid-level 12 × 12 feature map._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/feature-map-6.png" class="img-fluid rounded z-depth-1" zoomable=true alt="6 by 6 intermediate feature map" %}
 
-_Figure 26. Compact 6 × 6 feature map before classification._
+_Figure 22. Compact 6 × 6 feature map before classification._
 
 ## 9. Prototyping and Delivery
 
@@ -197,7 +178,7 @@ For physical testing, the team built a closed lightbox with a white background a
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/prototype-tray.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="Prototype lightbox containing four coffee-bean classes" %}
 
-_Figure 27. Prototype test box with dark, light, green, and insect-damaged beans._
+_Figure 23. Prototype test box with dark, light, green, and insect-damaged beans._
 
 {% include figure.liquid path="assets/img/projects/coffee-bean-edge-ai/team-prototyping.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="DATA team members working on the coffee-bean sorting prototype" %}
 
