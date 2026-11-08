@@ -68,3 +68,103 @@ We then used a weighted decision matrix to evaluate each concept consistently. T
 {% include figure.liquid path="assets/img/projects/global-epics/decision-matrix.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="Weighted decision matrix comparing four proposed water treatment solutions" %}
 
 _Figure 4. Weighted decision matrix used to select the most suitable solution._
+
+## 4. Conceptual Design
+
+We began by mapping the system's operating logic and the possible paths from each water source to the users. The early concept considered tap, well, and rainwater; after evaluating feasibility and reliability, the detailed design focused on two principal sources: **local tap water for normal operation** and **well water as an emergency backup**.
+
+{% include figure.liquid path="assets/img/projects/global-epics/conceptual-system-flow.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Early flowchart comparing tap, well, and rainwater treatment paths" %}
+
+_Figure 5. Early conceptual flowchart for the multi-source water system._
+
+### Normal operation: local tap water
+
+Under normal conditions, the system uses only local tap water:
+
+1. Water supplied from the Duy Nghia water plant fills an elevated **1,000-litre storage tank** on the school roof.
+2. The stored water is divided into three branches: the teachers' toilets, the students' toilets, and the raw-water feed to the ultrafiltration system.
+3. After treatment, the filtered water flows into a second, lower **1,000-litre tank** and is distributed to user interfaces on the first and second floors.
+4. At the point of use, the design incorporates a Japanese **Cleansui** filtration unit. It operates using water-line pressure and therefore requires no dedicated electrical supply for filtration.
+
+### Flood or power-outage operation: well water
+
+Together, the two storage tanks provide up to **2,000 litres of reserve capacity**. During flooding or a power outage, the system first relies on this stored water. If the reserve is depleted, well water becomes the backup source:
+
+1. Water is drawn from the well using a pulley system.
+2. An aeration stage introduces oxygen, promoting the oxidation of dissolved ferrous iron (Fe²⁺) into less-soluble ferric compounds that can precipitate and be removed.
+3. The pre-treated water passes through two parallel ultrafiltration modules to increase treatment capacity and provide a more robust flow path.
+4. The water then reaches the Cleansui point-of-use filtration interface before distribution.
+
+## 5. Detailed Design
+
+The detailed design translated the selected concept into a building-scale layout, including the roof tanks, filtration stages, pipe routing, and user access points.
+
+### 5.1. Local tap-water supply
+
+{% include figure.liquid path="assets/img/projects/global-epics/detailed-tap-water.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="Digital model and reference installation for the local tap-water supply" %}
+
+_Figure 6. Roof-level tap-water supply and storage concept._
+
+### 5.2. Tap-water filtration system
+
+{% include figure.liquid path="assets/img/projects/global-epics/detailed-tap-filtration.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="Detailed pipe routing through the tap-water filtration system" %}
+
+_Figure 7. Proposed filtration layout and the route from the roof tank to the distribution line._
+
+### 5.3. Well-water backup
+
+{% include figure.liquid path="assets/img/projects/global-epics/detailed-well-water.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="Detailed design for the well-water backup and parallel filtration modules" %}
+
+_Figure 8. Backup well-water path through two parallel filtration modules._
+
+### 5.4. Inside the well-water tank
+
+{% include figure.liquid path="assets/img/projects/global-epics/detailed-well-tank.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="Interior of the well-water tank showing the mechanical float and aeration system" %}
+
+_Figure 9. Mechanical float and aeration components inside the well-water tank._
+
+### 5.5. User interface
+
+{% include figure.liquid path="assets/img/projects/global-epics/detailed-user-interface-floor.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="Proposed drinking-water user interfaces on two floors of the school" %}
+
+_Figure 10. User access points integrated into the first- and second-floor distribution network._
+
+{% include figure.liquid path="assets/img/projects/global-epics/detailed-user-interface-point.jpg" class="img-fluid rounded z-depth-1" zoomable=true alt="Close-up concept for a Cleansui point-of-use drinking-water interface" %}
+
+_Figure 11. Point-of-use filtration and dispensing interface._
+
+## 6. Testing and Evaluation
+
+After completing the digital simulation, we built a physical prototype to test the system architecture and visualise the water flow. Blue-coloured water was used during the demonstration to make movement through the tanks, pipes, and treatment stages easier to observe.
+
+<div class="embed-responsive embed-responsive-16by9 mb-3">
+  <iframe
+    class="embed-responsive-item"
+    src="https://drive.google.com/file/d/1eU_bN6Ud9Hq3KPJyoYLwz7zWkBjKNkAo/preview"
+    title="GLOBAL EPICS physical water-system prototype demonstration"
+    allow="autoplay"
+    allowfullscreen
+  ></iframe>
+</div>
+
+_[Watch the physical-prototype demonstration on Google Drive](https://drive.google.com/file/d/1eU_bN6Ud9Hq3KPJyoYLwz7zWkBjKNkAo/view?usp=sharing)._
+
+We also used a handheld TDS meter during a tap-water filtration demonstration. The recorded values were **39 ppm before treatment** and **80 ppm after treatment**. A team member drank a sample during the presentation as part of the demonstration.
+
+These measurements document what was observed during the prototype test; they should not be interpreted as proof of potable-water safety. TDS describes the concentration of dissolved substances and can help characterise taste and mineral content, but it does not identify microorganisms or individual contaminants. The [World Health Organization's TDS fact sheet](https://www.who.int/publications/m/item/chemical-fact-sheets--total-dissolved-solids) does not propose a health-based guideline value for TDS. A fuller explanation of the measurement is also available in [Understanding TDS in Drinking Water](https://www.bisleri.com/blogs/understanding-tds-and-its-role-in-drinking-water.html). Validating drinking-water safety would require appropriate microbiological and chemical testing against the relevant standards.
+
+<div class="embed-responsive embed-responsive-16by9 mb-3">
+  <iframe
+    class="embed-responsive-item"
+    src="https://drive.google.com/file/d/1JEf3SRKLNXnCu6kTXvcAx1u9EPiOReWP/preview"
+    title="GLOBAL EPICS water-quality and TDS demonstration"
+    allow="autoplay"
+    allowfullscreen
+  ></iframe>
+</div>
+
+_[Watch the water-quality demonstration on Google Drive](https://drive.google.com/file/d/1JEf3SRKLNXnCu6kTXvcAx1u9EPiOReWP/view?usp=sharing)._
+
+### Outcome
+
+The project combined stakeholder research, systematic concept selection, detailed modelling, prototyping, and teamwork. Our WATER-ICE team received the **First Prize Award** in the EPICS Innovation Showcase, competing alongside Arizona State University and universities from across Vietnam.
