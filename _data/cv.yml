@@ -2,96 +2,151 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Hoang Van Thang
+    - name: Location
+      value: Da Nang, Vietnam
+    - name: Email
+      value: <a href="mailto:vthanghoang.working@gmail.com">vthanghoang.working@gmail.com</a>
+    - name: Research Interests
+      value: Edge computing and intelligence, AIoT, smart cyber-physical systems, and intelligent sensing systems
 
-- title: Education
+- title: Education and Training
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: BEng in Electronics Engineering
+      institution: University of Science and Technology, the University of Danang, Vietnam
+      year: 2022 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "CPA: 3.5/4.0"
+        - Dean's Excellence Scholarship; Student of 5 Merits, DUT-UD (2024, 2025)
+        - "Certifications: TOEIC 815; IELTS 6.0; CREST Bronze Award; Introduction to Semiconductor Packaging; Digital RTL Design and Verification with SystemVerilog; Fundamental Theories and Implementations of Data Science"
+    - title: Exchange Student in Advanced Material Science
+      institution: College of Engineering, National Yang Ming Chiao Tung University (NYCU), Hsinchu, Taiwan
+      year: May 2026
       description:
-        - Description 1.
-        - Description 2.
+        - Completed the International Internship Programme 2026, including coursework and laboratory practice in Advanced Material Science.
+    - title: Inaugural Fellowship Cohort
+      institution: Visemi Foundation - Takeoff Fellowship 2026
+      year: May 2026 - Present
+      description:
+        - Selected for a six-month academic writing and graduate application accelerator supporting Vietnamese STEM students applying to global MS and PhD programmes.
 
-- title: Experience
+- title: Research and Academic Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant - Human Skin Spectral Reflectance Modelling and Simulation
+      institution: LYDINC Ltd. Co.
+      year: Jan. 2024 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Developed a multi-layered Monte Carlo simulation framework for light-tissue interaction and generated diffuse spectral reflectance data for AI-driven healthcare applications.
+        - Validated simulated data against real skin measurements, achieving 97% agreement and establishing a synthetic-data pipeline for diagnostic model training.
+        - Research recognized with Third Prize at the Faculty Scientific Conference 2025 and Second Award at the University Scientific Conference 2025.
+    - title: SoC Hardware Developer - SoC Architecture Design on FPGA
+      institution: University of Science and Technology, the University of Danang
+      year: Feb. 2026
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Designed System-on-Chip architectures on Altera DE2 and Alinx Zynq 7000 FPGA platforms using Quartus II and Vivado.
+        - Developed and verified UART, floating-point addition, and AES hardware modules through simulation-based testing.
+    - title: Embedded Systems Developer - Smart Anti-Suffocation Alarm System for Vehicles
+      institution: University of Science and Technology, the University of Danang
+      year: Dec. 2025
       description:
+        - Integrated an ESP32, SHT41 environmental sensor, and HLK-LD2410 presence sensor in a multi-sensor monitoring system that achieved 95% detection accuracy.
+        - Implemented GPS localization and a Firebase-based web alert interface with end-to-end latency under 40 seconds.
+    - title: Embedded Systems Developer - Edge AI-Driven Coffee Bean Sorting System
+      institution: University of Science and Technology, the University of Danang
+      year: Jun. 2025
+      description:
+        - Deployed an OpenCV and MobileNetV2-SSD computer-vision pipeline on a Raspberry Pi 4B for real-time embedded inference.
+        - Applied post-training quantization to reduce inference latency by approximately 40% while preserving 94.8% classification accuracy.
+    - title: Embedded Systems Developer - Student Forum 2023
+      institution: University of Engineering and Technology, Vietnam National University
+      year: Dec. 2023
+      description:
+        - Implemented a LoRa Mesh topology that extended communication range by 71%, from 350 m to 600 m, without compromising data reliability.
+        - Evaluated system power management strategies supporting up to 300 days of continuous node operation.
+        - Received the Best Presentation Award at Student Forum 2023.
+    - title: System Designer - ICCITX.O & SHelC 2024
+      institution: University of Science and Technology, the University of Danang
+      year: Apr. 2024
+      description:
+        - Designed a LoRaWAN-based IoT flood-water measurement system for urban areas in Da Nang.
+        - Presented the system at IEEE ICCITX.O & SHelC 2024 and placed third among teams representing France, Morocco, Canada, and Vietnam.
+    - title: Team Facilitator - GLOBAL EPICS
+      institution: Arizona State University
+      year: Apr. 2023 - Jun. 2023
+      description:
+        - Led a cross-functional team through problem definition, prototyping, and iteration using Design Thinking.
+        - Delivered a deployable water-purification prototype for a local community and received the First Prize Award.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Professional Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Teaching Assistant
+      institution: University of Science and Technology, the University of Danang
+      year: Jan. 2024 - May 2026
+      description:
+        - Supported Engineering Mathematics, Introduction to Technical Communication, and Engineering Projects in Community Service courses.
+    - title: STEAM Robotics Teacher
+      institution: LYDINC Ltd. Co.
+      year: Feb. 2023 - Oct. 2025
+      description:
+        - Designed an OBE STEAM robotics curriculum using the 5E Instructional Model for K-12 learners.
+
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Programming Languages
+      items:
+        - C/C++, Python, SystemVerilog, MATLAB, Bash Shell
+    - title: Hardware and EDA Tools
+      items:
+        - Raspberry Pi 4B, ESP32, Altera DE2 FPGA, Alinx Zynq 7000
+        - MATLAB/Simulink, Xilinx Vivado, Intel Quartus, Proteus, LTspice, Altium
+    - title: Embedded and IoT Protocols
+      items:
+        - LoRaWAN, MQTT, Wi-Fi, 4G, HTTP, NFC/RFID, UART, I2C, SPI, USB, CAN
+    - title: AI and Cloud
+      items:
+        - MobileNetV2-SSD, NumPy, scikit-learn, OpenCV, TensorFlow Lite, PyTorch Mobile, MediaPipe, Google Firebase, Cloudflare
+    - title: Research and Professional Skills
+      items:
+        - System architecture design, design thinking, academic writing, cross-cultural communication, and interpersonal skills
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: Sep. 2026
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Australia-Vietnam Strategic Technologies Centre (AVSTC) Scholarship 2026
+    - year: May 2026
       items:
-        - Max Planck Medal
+        - Takeoff Fellowship 2026, Visemi Foundation
+    - year: Dec. 2025
+      items:
+        - Student of 5 Merits (University level), the University of Danang
+    - year: May 2025
+      items:
+        - Best Presenter Award, International Conference on Artificial Intelligence and Mechatronics Systems 2025
+    - year: Dec. 2023
+      items:
+        - Best Presentation Award, Student Forum 2023, Vietnam National University
+    - year: Jul. 2023
+      items:
+        - Dean's Excellence Scholarship, University of Science and Technology, the University of Danang
 
-- title: Academic Interests
-  type: nested_list
+- title: Volunteer Experience
+  type: time_table
   contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Liaison Officer - City Partnership Forum Da Nang MEET 2025
+      year: Jan. 2025
+      description:
+        - Guided and supported the Thailand Consulate General delegation during the three-day international forum.
+    - title: Global Buddy - ICSCEA 2023
+      year: Jul. 2023
+      description:
+        - Assisted more than 100 international participants at the International Conference on Sustainable Civil Engineering and Architecture 2023.
+    - title: Event Volunteer - Manulife Danang International Marathon
+      year: Jul. 2023 - Jul. 2024
+      description:
+        - Coordinated race-kit distribution and supported finish-line operations across the 2023 and 2024 events.

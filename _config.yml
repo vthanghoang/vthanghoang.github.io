@@ -2,23 +2,20 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Thang Hoang Van # the website title (if blank, full name will be used instead)
+title: Hoang Van Thang # the website title (if blank, full name will be used instead)
 first_name: Thang
 middle_name: Van
 last_name: Hoang
 contact_note: >
   Contact me via my email: vthanghoang.working@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  I am a fourth-year electronics and communications engineering student at UD-DUT, with a CPA 3.39/4.0,
-  I have spent my past few years at UD-DUT conducting research on LoRa, IoT systems and Smart Healthcare.,
-  My objective is to integrate these technologies with Artificial Intelligence to develop Digital Health solutions and other specialized AIoT applications,
-  I am currently focusing on broadening my domain deeply, especially in Electronics Engineering, before moving toward my future plan,  
-  My future plan is to pursue a Master’s degree in the Europe or Australia to deepen my technical expertise,
-  Ultimately, I aim to work in an academic research environment where I can continue to invent and prototype high-performance AIoT systems for the healthcare industry.
+  Hoang Van Thang is an Electronics Engineering student at the University of Science and Technology,
+  the University of Danang. His research interests include edge computing and intelligence, AIoT,
+  smart cyber-physical systems, and intelligent sensing for healthcare.
 footer_text: >
-keywords: EdgeAI, IoTs, Embedded Systems, Smart Healthcare # add your own keywords or leave empty
+keywords: Edge AI, AIoT, Embedded Systems, Smart Healthcare, Cyber-Physical Systems, Intelligent Sensing
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon:  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://vthanghoang.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -52,7 +49,7 @@ navbar_fixed: true
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
-posts_in_search: true
+posts_in_search: false
 bib_search: true
 
 # Dimensions
@@ -88,8 +85,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Thang Hoang's research notes # blog_name will be displayed in your blog page
+blog_description: Notes on embedded systems, edge AI, and intelligent sensing.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -118,19 +115,13 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Newsletter
