@@ -6,8 +6,8 @@ subtitle: <a href='https://dut.udn.vn/'>UD-DUT</a> · Electronics Engineering ·
 
 profile:
   align: right
-  image: vth_pic.png
-  image_circular: false
+  image: vth_pic
+  image_circular: true
   more_info: >
     <p>Da Nang, Vietnam</p>
     <p>Edge AI · Embedded Systems · AIoT</p>
