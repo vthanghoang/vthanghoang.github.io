@@ -71,9 +71,9 @@ ninja.data = [{
           description: "Community-driven engineering design using the Design Thinking methodology.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/global-epics-water-purification/";
-            },},{id: "projects-low-power-lora-mesh-network",
-          title: 'Low-Power LoRa Mesh Network',
-          description: "AODV-based multi-hop sensing for reliable, energy-aware rainfall monitoring.",
+            },},{id: "projects-lorawan-flood-water-monitoring",
+          title: 'LoRaWAN Flood-Water Monitoring',
+          description: "A field-oriented LoRa/LoRaWAN platform for urban flood-level sensing, warning, and resilient data delivery.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/lora-mesh-network/";
             },},{id: "projects-human-skin-spectral-reflectance-modelling",
