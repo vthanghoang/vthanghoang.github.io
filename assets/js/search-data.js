@@ -73,7 +73,7 @@ ninja.data = [{
               window.location.href = "/projects/global-epics-water-purification/";
             },},{id: "projects-low-power-lora-mesh-network",
           title: 'Low-Power LoRa Mesh Network',
-          description: "Routing and power-management strategies for long-range wireless sensor networks.",
+          description: "AODV-based multi-hop sensing for reliable, energy-aware rainfall monitoring.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/lora-mesh-network/";
             },},{id: "projects-human-skin-spectral-reflectance-modelling",
