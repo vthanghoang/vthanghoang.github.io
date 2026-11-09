@@ -122,3 +122,10 @@ The range test compared a direct link with the same deployment supported by an i
 - Demonstrated an AODV LoRa mesh that extends sensing coverage while maintaining reliable packet delivery.
 - Validated a low-duty-cycle design suitable for long-lived, battery-powered monitoring nodes.
 - Next steps include wider tests in remote terrain, more precise microamp-level current measurements, additional link-range evaluation, and stronger network-security controls.
+
+## References
+
+1. L. D. Tuan and T. D. Ngoc, “Building wireless sensor networks for precision agriculture,” *Can Tho University Journal of Science*, 2013, pp. 115–122. Original publication in Vietnamese.
+2. C. Ebi, F. Schaltegger, A. Rüst, and F. Blumensaat, “Synchronous LoRa Mesh Network to Monitor Processes in Underground Infrastructure,” *IEEE Access*, vol. 7, pp. 57663–57677, 2019. [https://doi.org/10.1109/ACCESS.2019.2913985](https://doi.org/10.1109/ACCESS.2019.2913985)
+3. D. de Farias Medeiros, M. R. Villarim, F. B. S. de Carvalho, and C. P. de Souza, “Implementation and Analysis of Routing Protocols for LoRa Wireless Mesh Networks,” *2020 11th IEEE Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)*, pp. 20–25, 2020. [https://doi.org/10.1109/IEMCON51383.2020.9284888](https://doi.org/10.1109/IEMCON51383.2020.9284888)
+4. V. D. Pham, T. D. Dinh, and R. Kirichek, “Method for Organizing Mesh Topology Based on LoRa Technology,” *2018 10th International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT)*, pp. 1–6, 2018. [https://doi.org/10.1109/ICUMT.2018.8631270](https://doi.org/10.1109/ICUMT.2018.8631270)
