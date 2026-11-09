@@ -58,7 +58,7 @@ ninja.data = [{
               window.location.href = "/projects/coffee-bean-edge-ai/";
             },},{id: "projects-lorawan-flood-water-monitoring",
           title: 'LoRaWAN Flood-Water Monitoring',
-          description: "An IoT sensing concept for urban flood monitoring in Da Nang.",
+          description: "An IoT sensing platform concept for urban flood-level monitoring and local warning in Da Nang.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/flood-water-monitoring/";
             },},{id: "projects-fpga-based-soc-architecture",
@@ -71,9 +71,9 @@ ninja.data = [{
           description: "Community-driven engineering design using the Design Thinking methodology.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/global-epics-water-purification/";
-            },},{id: "projects-lorawan-flood-water-monitoring",
-          title: 'LoRaWAN Flood-Water Monitoring',
-          description: "A field-oriented LoRa/LoRaWAN platform for urban flood-level sensing, warning, and resilient data delivery.",
+            },},{id: "projects-low-power-lora-mesh-network",
+          title: 'Low-Power LoRa Mesh Network',
+          description: "AODV-based multi-hop sensing for reliable, energy-aware rainfall monitoring.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/lora-mesh-network/";
             },},{id: "projects-human-skin-spectral-reflectance-modelling",
