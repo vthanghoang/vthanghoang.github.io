@@ -83,7 +83,7 @@ ninja.data = [{
               window.location.href = "/projects/skin-spectral-modelling/";
             },},{id: "projects-smart-anti-suffocation-alarm-for-vehicles",
           title: 'Smart Anti-Suffocation Alarm for Vehicles',
-          description: "Multi-sensor occupant detection and cloud-connected emergency alerts.",
+          description: "A multi-sensor IoT safety system that detects a trapped occupant, estimates risk, and sends a location-aware alert.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/vehicle-safety-alarm/";
             },},{
