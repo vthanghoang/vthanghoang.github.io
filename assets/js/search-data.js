@@ -61,9 +61,9 @@ ninja.data = [{
           description: "An IoT sensing platform concept for urban flood-level monitoring and local warning in Da Nang.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/flood-water-monitoring/";
-            },},{id: "projects-fpga-based-soc-architecture",
-          title: 'FPGA-Based SoC Architecture',
-          description: "Digital hardware modules and SoC design on Altera DE2 and Alinx Zynq 7000 platforms.",
+            },},{id: "projects-fpga-based-aes-encryption-standard",
+          title: 'FPGA-Based AES Encryption Standard',
+          description: "Hardware implementation and verification of AES encryption/decryption on an FPGA-based SoC platform.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/fpga-soc-architecture/";
             },},{id: "projects-global-epics-water-purification-prototype",
