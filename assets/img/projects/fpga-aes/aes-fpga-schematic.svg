@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">AES FPGA datapath schematic</title>
+  <desc id="desc">A schematic of the AES round datapath, key schedule, state register, inverse path and output interface.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfaf5}.blk{fill:#fff;stroke:#1f3348;stroke-width:3;rx:14}.round{fill:#d9eef3;stroke:#0f6f83;stroke-width:3;rx:14}.key{fill:#f2c7b8;stroke:#b85d45;stroke-width:3;rx:14}.inv{fill:#e8e4c6;stroke:#6d734d;stroke-width:3;rx:14}.t{font-family:Arial,sans-serif;fill:#1f3348}.h{font-size:25px;font-weight:700}.s{font-size:18px}.wire{stroke:#1f3348;stroke-width:4;fill:none;marker-end:url(#a)}.note{font-size:16px;fill:#b85d45;font-family:Arial,sans-serif;font-weight:700}
+    </style>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#1f3348"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="700"/>
+  <text class="t h" x="600" y="48" text-anchor="middle">AES FPGA datapath schematic</text>
+  <rect class="blk" x="35" y="230" width="160" height="95"/><text class="t h" x="115" y="270" text-anchor="middle">Input</text><text class="t s" x="115" y="300" text-anchor="middle">128-bit state</text>
+  <rect class="round" x="235" y="180" width="165" height="195"/><text class="t h" x="317" y="225" text-anchor="middle">Round FSM</text><text class="t s" x="317" y="260" text-anchor="middle">round counter</text><text class="t s" x="317" y="290" text-anchor="middle">encrypt / decrypt</text><text class="t s" x="317" y="320" text-anchor="middle">valid / ready</text>
+  <rect class="round" x="440" y="155" width="170" height="85"/><text class="t h" x="525" y="205" text-anchor="middle">SubBytes</text>
+  <rect class="round" x="440" y="270" width="170" height="85"/><text class="t h" x="525" y="320" text-anchor="middle">ShiftRows</text>
+  <rect class="round" x="440" y="385" width="170" height="85"/><text class="t h" x="525" y="435" text-anchor="middle">MixColumns</text>
+  <rect class="key" x="690" y="240" width="190" height="100"/><text class="t h" x="785" y="282" text-anchor="middle">AddRoundKey</text><text class="t s" x="785" y="312" text-anchor="middle">XOR with key</text>
+  <rect class="blk" x="960" y="230" width="195" height="95"/><text class="t h" x="1057" y="270" text-anchor="middle">Output</text><text class="t s" x="1057" y="300" text-anchor="middle">ciphertext</text>
+  <path class="wire" d="M195 278 H235"/><path class="wire" d="M400 278 H440"/><path class="wire" d="M525 240 V270"/><path class="wire" d="M525 355 V385"/><path class="wire" d="M610 428 H650 V290 H690"/><path class="wire" d="M880 290 H960"/>
+  <text class="note" x="420" y="145">forward transform path</text>
+  <rect class="inv" x="235" y="515" width="165" height="85"/><text class="t h" x="317" y="565" text-anchor="middle">Inverse path</text>
+  <rect class="key" x="690" y="515" width="190" height="85"/><text class="t h" x="785" y="565" text-anchor="middle">Key schedule</text>
+  <path class="wire" d="M317 375 V515"/><path class="wire" d="M785 340 V515"/>
+  <text class="t s" x="600" y="650" text-anchor="middle">Key expansion: RotWord → SubWord → Rcon → XOR generates the round-key sequence.</text>
+</svg>
