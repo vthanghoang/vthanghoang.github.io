@@ -76,6 +76,11 @@ ninja.data = [{
           description: "AODV-based multi-hop sensing for reliable, energy-aware rainfall monitoring.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/lora-mesh-network/";
+            },},{id: "projects-3-dof-rrp-robotic-manipulator-simulation",
+          title: '3-DOF RRP Robotic Manipulator Simulation',
+          description: "Forward and inverse kinematics, Simscape Multibody modelling and Cartesian trajectory planning for a revolute-revolute-prismatic robot.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/robotics-rrp-manipulator/";
             },},{id: "projects-human-skin-spectral-reflectance-modelling",
           title: 'Human Skin Spectral Reflectance Modelling',
           description: "Monte Carlo simulation and validation for AI-driven skin diagnostics.",
