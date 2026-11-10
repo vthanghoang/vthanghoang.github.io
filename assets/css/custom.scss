@@ -251,3 +251,44 @@ html[data-theme="dark"] h6,
 html[data-theme="dark"] .navbar-brand {
   color: #f3eee5 !important;
 }
+
+// Keep technical project figures readable without letting source screenshots
+// expand to the full page width or appear artificially zoomed.
+.safety-figure {
+  max-width: 920px;
+  margin: 1.5rem auto 2rem;
+  text-align: center;
+}
+
+.safety-figure img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 460px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.col-sm-4 .safety-figure,
+.col-sm-6 .safety-figure {
+  max-width: 100%;
+  margin-top: 0.75rem;
+}
+
+.col-sm-4 .safety-figure img,
+.col-sm-6 .safety-figure img {
+  max-height: 330px;
+}
+
+@media (max-width: 767px) {
+  .safety-figure {
+    margin: 1rem auto 1.5rem;
+  }
+
+  .safety-figure img,
+  .col-sm-4 .safety-figure img,
+  .col-sm-6 .safety-figure img {
+    max-height: 360px;
+  }
+}
