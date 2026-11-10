@@ -91,7 +91,7 @@ The broader FPGA work includes UART integration, a floating-point adder experime
 
 The final evidence page shows the Vivado Hardware Manager programming the generated bitstream to the FPGA. Add the demonstration recording here:
 
-> **Google Drive demo video:** [Video]([PASTE_GOOGLE_DRIVE_VIDEO_LINK_HERE](https://drive.google.com/file/d/1xGAkp7cqAWxte3yfnRj5KqAnQO2L7cZq/view?usp=sharing))
+> **Google Drive demo video:** [Video](https://drive.google.com/file/d/1xGAkp7cqAWxte3yfnRj5KqAnQO2L7cZq/view?usp=sharing)
 
 <figure class="fpga-figure">
   <img src="{{ '/assets/img/projects/fpga-aes/aes-results.png' | relative_url }}" alt="Vivado Hardware Manager programming the AES design onto the FPGA">
