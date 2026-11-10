@@ -308,6 +308,33 @@ html[data-theme="dark"] .navbar-brand {
   max-height: 300px;
 }
 
+.robotics-figure {
+  max-width: 920px;
+  margin: 1.5rem auto 2rem;
+  text-align: center;
+}
+
+.robotics-figure img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 430px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.col-sm-4 .robotics-figure,
+.col-sm-6 .robotics-figure {
+  max-width: 100%;
+  margin-top: 0.75rem;
+}
+
+.col-sm-4 .robotics-figure img,
+.col-sm-6 .robotics-figure img {
+  max-height: 300px;
+}
+
 @media (max-width: 767px) {
   .safety-figure {
     margin: 1rem auto 1.5rem;
@@ -322,6 +349,12 @@ html[data-theme="dark"] .navbar-brand {
   .fpga-figure img,
   .col-sm-4 .fpga-figure img,
   .col-sm-6 .fpga-figure img {
+    max-height: 340px;
+  }
+
+  .robotics-figure img,
+  .col-sm-4 .robotics-figure img,
+  .col-sm-6 .robotics-figure img {
     max-height: 340px;
   }
 }

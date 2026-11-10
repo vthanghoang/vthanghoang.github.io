@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">RRP robot kinematics and trajectory pipeline</title>
+  <desc id="desc">A block diagram from desired Cartesian trajectory to inverse kinematics, joint commands, Simscape RRP plant, forward kinematics and coordinate error plots.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f4ec}.box{fill:#fffdf8;stroke:#24364b;stroke-width:3;rx:18}.accent{fill:#d9eef3;stroke:#0f6f83;stroke-width:3;rx:18}.warm{fill:#f2c7b8;stroke:#b85d45;stroke-width:3;rx:18}.t{font-family:Arial,sans-serif;fill:#24364b}.h{font-size:27px;font-weight:700}.s{font-size:20px}.wire{stroke:#24364b;stroke-width:4;fill:none;marker-end:url(#arrow)}.note{font-family:Arial,sans-serif;font-size:17px;fill:#b85d45;font-weight:700}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#24364b"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="620"/>
+  <text class="t h" x="600" y="50" text-anchor="middle">RRP robot kinematics and trajectory pipeline</text>
+  <rect class="accent" x="55" y="135" width="220" height="125"/><text class="t h" x="165" y="185" text-anchor="middle">Trajectory</text><text class="t s" x="165" y="220" text-anchor="middle">circle or straight line</text>
+  <rect class="warm" x="335" y="135" width="220" height="125"/><text class="t h" x="445" y="185" text-anchor="middle">Inverse IK</text><text class="t s" x="445" y="220" text-anchor="middle">x,y,z → θ₁, θ₂, d₃</text>
+  <rect class="box" x="615" y="135" width="220" height="125"/><text class="t h" x="725" y="185" text-anchor="middle">Joint commands</text><text class="t s" x="725" y="220" text-anchor="middle">Simulink signals</text>
+  <rect class="accent" x="895" y="135" width="250" height="125"/><text class="t h" x="1020" y="185" text-anchor="middle">Simscape RRP</text><text class="t s" x="1020" y="220" text-anchor="middle">3-DOF mechanical plant</text>
+  <path class="wire" d="M275 198 H335"/><path class="wire" d="M555 198 H615"/><path class="wire" d="M835 198 H895"/>
+  <rect class="box" x="335" y="370" width="220" height="125"/><text class="t h" x="445" y="420" text-anchor="middle">End-effector</text><text class="t s" x="445" y="455" text-anchor="middle">xₑ, yₑ, zₑ sensor</text>
+  <rect class="warm" x="615" y="370" width="220" height="125"/><text class="t h" x="725" y="420" text-anchor="middle">Forward FK</text><text class="t s" x="725" y="455" text-anchor="middle">T₀ₑ = T₀₁T₁₂T₂₃Tₑ₃</text>
+  <rect class="box" x="895" y="370" width="250" height="125"/><text class="t h" x="1020" y="420" text-anchor="middle">Workspace plots</text><text class="t s" x="1020" y="455" text-anchor="middle">desired vs actual</text>
+  <path class="wire" d="M1020 260 V330 H445 V370"/><path class="wire" d="M555 433 H615"/><path class="wire" d="M835 433 H895"/>
+  <text class="note" x="725" y="320" text-anchor="middle">measurement feedback</text>
+  <text class="t s" x="600" y="570" text-anchor="middle">The report evaluates both geometric correctness and trajectory tracking in Cartesian space.</text>
+</svg>
