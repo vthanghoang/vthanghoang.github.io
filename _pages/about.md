@@ -17,11 +17,13 @@ selected_papers: true
 social: true
 ---
 
-I am a final-year **Electronics Engineering** student at the University of Science and Technology, the University of Danang (DUT-UD). My work explores how embedded intelligence, sensing, and connected hardware can support practical healthcare and cyber-physical systems.
+Hoang Van Thang is an Electronics Engineering student at the University of Science and Technology, The University of Danang. His academic and research interests focus on Edge Computing and Intelligence, Artificial Intelligence of Things, Smart Cyber-Physical Systems, Intelligent sensing system and Low-power wireless communication networks.
 
-As a research assistant at LYDINC Ltd. Co., I develop simulation-based spectral imaging datasets for AI-driven skin diagnostics. My broader project experience spans FPGA-based system-on-chip design, Edge AI deployment, LoRa/LoRaWAN sensing networks, and connected safety systems. I am particularly interested in research that connects hardware-software co-design with reliable, resource-efficient intelligence at the edge.
+He has developed and contributed to a range of practical engineering projects. His work combines hardware–software co-design, embedded programming, mathematical modelling, data engineering, and machine-learning deployment for real-world applications.
 
-I have published and presented work in intelligent sensing and AI-enabled healthcare, including research recognized with the **Best Presenter Award at AIMS 2025**. I am preparing for graduate research in electronic engineering, embedded intelligence, and digital health.
+As a research assistant at LYDINC Ltd. Co., he has worked on simulation-based spectral imaging datasets for AI-assisted skin diagnostics. His research and work has been published in a conference proceeding (AIMS2025) and a scientific journal. His presentation has been recognized with the Best Presenter Award at AIMS 2025. He has also participated in research, supervision, and innovation activities related to STEAM education, including the development of a 5E-based STEAM Robotics curriculum and lesson plans at LYDINC Ltd. Co.
+
+He is particularly interested in developing reliable, resource-efficient intelligent systems that connect sensing, computation, and communication at the edge. His long-term goal is to pursue graduate research in electronic engineering, embedded intelligence, digital health, and intelligent cyber-physical systems.
 
 #### Research Interests
 
