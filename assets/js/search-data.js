@@ -71,6 +71,11 @@ ninja.data = [{
           description: "Community-driven engineering design using the Design Thinking methodology.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/global-epics-water-purification/";
+            },},{id: "projects-klesf-2026-international-stem-competition-facilitation",
+          title: 'KLESF 2026 International STEM Competition Facilitation',
+          description: "Facilitation, student mentoring and event operations for LYDINC at the Kuala Lumpur Engineering Science Fair in Malaysia.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/klesf-2026-lydinc/";
             },},{id: "projects-low-power-lora-mesh-network",
           title: 'Low-Power LoRa Mesh Network',
           description: "AODV-based multi-hop sensing for reliable, energy-aware rainfall monitoring.",
