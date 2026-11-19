@@ -23,19 +23,33 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-cv",
+        },{id: "dropdown-research-experience",
+              title: "Research Experience",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/experience/#research-experience";
+              },
+            },{id: "dropdown-teaching-experience",
+              title: "Teaching Experience",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/experience/#teaching-experience";
+              },
+            },{id: "dropdown-additional-relevant-experience",
+              title: "Additional Relevant Experience",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/experience/#additional-relevant-experience";
+              },
+            },{id: "nav-cv",
           title: "cv",
           description: "Education, research experience, engineering projects, awards, and technical skills.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
-          },
-        },{id: "nav-teaching",
-          title: "teaching",
-          description: "Teaching and mentoring experience in engineering, robotics, and community-based design.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
           },
         },{id: "books-the-godfather",
           title: 'The Godfather',
