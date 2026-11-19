@@ -34,18 +34,6 @@ children:
   <p class="experience-links">Related project: <a href="{{ '/projects/skin-spectral-modelling/' | relative_url }}">Human Skin Spectral Reflectance Modelling and Simulation</a></p>
 </div>
 
-<div class="experience-entry">
-  <h3>Selected Research and Engineering Projects</h3>
-  <p class="experience-meta">University of Science and Technology, the University of Danang · 2023 – Present</p>
-  <p>Applied research and hardware–software co-design across FPGA SoC architecture, Edge AI, intelligent sensing, and low-power wireless communication.</p>
-  <ul class="experience-project-list">
-    <li><a href="{{ '/projects/fpga-soc-architecture/' | relative_url }}">SoC Architecture Design on FPGA</a> — UART, floating-point addition, and AES hardware modules.</li>
-    <li><a href="{{ '/projects/coffee-bean-edge-ai/' | relative_url }}">Edge AI-Driven Coffee Bean Sorting System</a> — embedded computer vision and quantised inference.</li>
-    <li><a href="{{ '/projects/flood-water-monitoring/' | relative_url }}">LoRaWAN Flood-Water Monitoring</a> — IoT sensing for urban flood monitoring in Da Nang.</li>
-    <li><a href="{{ '/projects/vehicle-safety-alarm/' | relative_url }}">Smart Anti-Suffocation Alarm System</a> — multi-sensor monitoring, localisation, and cloud alerts.</li>
-  </ul>
-</div>
-
 <span id="teaching-experience"></span>
 
 ## Teaching Experience
