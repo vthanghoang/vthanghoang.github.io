@@ -465,3 +465,57 @@ html[data-theme="dark"] .navbar-brand {
     max-height: 360px;
   }
 }
+
+// Experience page: compact editorial cards that keep the long-form CV readable.
+.experience-intro {
+  max-width: 860px;
+  margin: 0 auto 2rem;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--portfolio-orange);
+  background: var(--portfolio-paper);
+  color: var(--portfolio-muted);
+}
+
+.experience-entry {
+  margin: 0 0 1.25rem;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 14px;
+  background: var(--portfolio-paper);
+  box-shadow: 0 8px 22px rgba(80, 58, 35, 0.055);
+}
+
+.experience-entry-featured {
+  border-top: 4px solid var(--portfolio-orange);
+}
+
+.experience-entry h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  font-size: 1.25rem;
+}
+
+.experience-meta {
+  margin-bottom: 0.85rem;
+  color: var(--portfolio-muted);
+  font-size: 0.95rem;
+}
+
+.experience-entry ul {
+  margin-bottom: 0.8rem;
+}
+
+.experience-links {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.experience-project-list {
+  margin-bottom: 0;
+}
+
+html[data-theme="dark"] .experience-intro,
+html[data-theme="dark"] .experience-entry {
+  background: #2d2924;
+  border-color: #4a4137;
+}

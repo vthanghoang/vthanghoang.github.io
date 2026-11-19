@@ -3,8 +3,8 @@ layout: page
 permalink: /teaching/
 title: teaching
 description: Teaching and mentoring experience in engineering, robotics, and community-based design.
-nav: true
-nav_order: 6
+nav: false
+nav_order: 7
 ---
 
 ## Teaching Assistant

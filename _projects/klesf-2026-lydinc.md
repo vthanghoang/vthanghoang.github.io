@@ -3,7 +3,7 @@ layout: page
 title: KLESF 2026 International STEM Competition Facilitation
 description: Facilitation, student mentoring and event operations for LYDINC at the Kuala Lumpur Engineering Science Fair in Malaysia.
 importance: 4
-category: engineering-design
+category: additional-relevant-experience
 ---
 
 ## Overview
