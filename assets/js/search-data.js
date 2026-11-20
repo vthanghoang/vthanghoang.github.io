@@ -102,7 +102,7 @@ ninja.data = [{
               window.location.href = "/projects/robotics-rrp-manipulator/";
             },},{id: "projects-human-skin-spectral-reflectance-modelling",
           title: 'Human Skin Spectral Reflectance Modelling',
-          description: "Monte Carlo simulation and validation for AI-driven skin diagnostics.",
+          description: "Monte Carlo simulation, NIR measurement, and database validation for AI-driven skin diagnostics.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/skin-spectral-modelling/";
             },},{id: "projects-smart-anti-suffocation-alarm-for-vehicles",
