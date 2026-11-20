@@ -48,7 +48,19 @@ A(\\lambda)=\\log_{10}\\left(\\frac{S_{ref}(\\lambda)}{S_{sample}(\\lambda)}\\ri
 R_d(\\lambda)=\\frac{S_{sample}(\\lambda)}{S_{ref}(\\lambda)}.
 $$
 
+<figure>
+  <img src="{{ '/assets/img/projects/skin-spectral-modelling/standardization-pipeline.jpg' | relative_url }}" alt="Standardization pipeline for measured reflectance data" style="max-width: 780px; width: 100%; height: auto;">
+  <figcaption>Data-processing pipeline: interpolation → Savitzky–Golay filtering → scaling-factor calculation → standardised reflectance (capstone report, Fig. 13).</figcaption>
+</figure>
+
 Raw reflectance is then standardised with the instrument-specific scaling factors and grouped by skin condition, age, tone, and measurement area. This produces consistent records for model fitting and later similarity search.
+
+<figure>
+  <img src="{{ '/assets/img/projects/skin-spectral-modelling/measurement-areas-nir.jpg' | relative_url }}" alt="Skin measurement areas and NIR-M-R2 measurement on the inner forearm" style="max-width: 780px; width: 100%; height: auto;">
+  <figcaption>Measurement protocol: cheek, inner forearm, and back of hand, with a typical NIR-M-R2 acquisition on the inner forearm (capstone report, Fig. 12).</figcaption>
+</figure>
+
+The report records **186 diffuse-reflectance samples from 27 Vietnamese participants**. This gives the synthetic database a real-measurement anchor instead of treating simulated spectra as ground truth.
 
 ## Four-layer Monte Carlo skin model
 
@@ -62,6 +74,13 @@ The simulated tissue is represented as a stack of:
 Each layer is parameterised by thickness $d$, anisotropy $g$, refractive index $\\eta$, absorption coefficient $\\mu_a$, and scattering coefficient $\\mu_s$. Melanin, water, and fat volume fractions are varied to represent skin tone, dryness, and ageing.
 
 For skin-tone experiments, the report uses melanin-volume ranges of approximately **3–4% (light), 4–5% (moderate), and 6–7% (dark)**. Dry-skin configurations alter water fraction, layer thickness, and refractive index; ageing configurations modify water and fat fractions to represent age-related optical changes.
+
+<figure>
+  <img src="{{ '/assets/img/projects/skin-spectral-modelling/skin-tone-parameters.jpg' | relative_url }}" alt="Light, moderate, and dark skin-tone models used in the simulation" style="max-width: 780px; width: 100%; height: auto;">
+  <figcaption>Skin-tone parameterisation: melanin volume fraction of approximately 3–4% (light), 4–5% (moderate), and 6–7% (dark). The dry-skin model also varies water fraction, layer thickness, refractive index, and scattering.</figcaption>
+</figure>
+
+Selected dry-skin parameters reported in the model include DER thickness **0.08–0.10 cm**, SUB thickness **0.20–0.40 cm**, and DER scattering factor **0.562**.
 
 The GPU implementation is based on **CUDA Monte Carlo for Multi-Layered Media (CUDAMCML)**. GPU execution makes repeated parameter sweeps practical, while **FAISS** is used to accelerate similarity search across the generated spectral database.
 
@@ -77,6 +96,28 @@ This evaluation design is important because it tests more than visual similarity
 - **AI-readiness:** spectra are stored with metadata so they can be used as labelled training data rather than as isolated plots.
 
 The related validation study reported **97% agreement** between the generated database and real measurements under the evaluated conditions {% cite tran2025database ho2025validation %}. The capstone report also notes that broader participant diversity and additional skin conditions are needed before the database can be treated as clinically representative.
+
+### Quantitative results
+
+The report's tone-comparison experiment gives the following mean similarity scores between measured and simulated diffuse-reflectance curves:
+
+| Skin-tone group | Similarity |
+| --- | ---: |
+| Lightly pigmented | **96.45%** |
+| Moderately pigmented | **96.40%** |
+| Darkly pigmented | **96.30%** |
+
+<figure>
+  <img src="{{ '/assets/img/projects/skin-spectral-modelling/measured-vs-simulated-tones.jpg' | relative_url }}" alt="Measured and simulated diffuse reflectance curves for three skin-tone groups" style="max-width: 780px; width: 100%; height: auto;">
+  <figcaption>Measured-versus-simulated diffuse-reflectance curves for lightly, moderately, and darkly pigmented skin (capstone report, Fig. 22).</figcaption>
+</figure>
+
+For dry-versus-normal skin, the report observes stronger separation from approximately **1300–1700 nm**. Example p-values for inner-forearm comparisons are **0.003 at 1300 nm**, **0.001 at 1400 nm**, **0.000 at 1550 nm**, and **0.000 at 1650 nm**. These values are reported as evidence of wavelength-dependent separation, not as a clinical diagnostic claim.
+
+<figure>
+  <img src="{{ '/assets/img/projects/skin-spectral-modelling/dry-normal-pvalues.jpg' | relative_url }}" alt="p-value table for dry and normal skin reflectance comparisons" style="max-width: 780px; width: 100%; height: auto;">
+  <figcaption>Example statistical comparison of dry and normal skin reflectance at selected wavelengths (capstone report, Table 9).</figcaption>
+</figure>
 
 ## Engineering outputs
 
